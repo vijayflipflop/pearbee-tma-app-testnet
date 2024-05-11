@@ -383,7 +383,7 @@ const QuestionCard = (props) => {
     // });
     // const tonweb = new TonWeb(new TonWeb.HttpProvider(endpoint));
     const tonweb = new TonWeb(
-      new TonWeb.HttpProvider(`${tonCenterMainPoint}/api/v2/jsonRPC`, {
+      new TonWeb.HttpProvider(`${toncenterTestpoint}/api/v2/jsonRPC`, {
         apiKey: process.env.REACT_APP_TONCENTER_API_KEY,
       })
     );
