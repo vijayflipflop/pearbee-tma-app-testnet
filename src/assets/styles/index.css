@@ -1,0 +1,119 @@
+/* LOGIN PAGE */
+body,
+html {
+  background-color: var(--bg-card-gray);
+  height: 100%;
+}
+
+.signUp-class {
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--bg-dark);
+  display: grid;
+  place-items: center;
+}
+
+.input-container {
+  max-width: 600px;
+  margin: auto;
+  margin-top: 40px;
+}
+
+.input-container h2 {
+  font-size: 20px;
+  line-height: 27.24px;
+  text-align: center;
+  color: var(--text-white);
+}
+
+.input-container .sub-heading {
+  color: var(--text-light-gray);
+  font-size: 14px;
+  line-height: 16.8px;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.form_footer_container {
+  max-width: 600px;
+  width: 100%;
+  margin: 0px auto;
+}
+
+.form_footer_container p {
+  font-size: 14px;
+  line-height: 16.8px;
+  text-align: center;
+  color: var(--text-light-gray);
+  margin-top: 30px;
+  margin-bottom: 1rem;
+}
+
+.form_footer_container .btn {
+  font-family: var(--font-family-sans);
+  width: 100%;
+  border-radius: 30px;
+  padding: 14px 10px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21.79px;
+}
+/* OTP PAGE */
+
+.resend-otp {
+  color: var(--text-light-gray);
+  font-size: 14px;
+  font-family: var(--font-family-lato);
+  line-height: 16.8px;
+  font-weight: 700;
+}
+
+.resend-time {
+  color: var(--text-gray);
+}
+
+.dashboard_bottom_wrapper{
+  margin-bottom: 50px;
+}
+
+/* BONUS PAGE */
+
+/* .modal .modal-dialog {
+  max-width: 328px;
+  height: 376px;
+  margin: auto;
+}
+.modal-content {
+  background-color: var(--common-bg);
+  box-shadow: var(--box-shadow);
+}
+
+.modal-content .modal-dialog {
+  background-color: var(--common-bg);
+  box-shadow: var(--box-shadow);
+}
+
+.modal-footer h1 {
+  color: var(--text-gray);
+}
+
+.modal-footer h1 {
+  font-family: var(--font-family-poppins);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 36px;
+  background: linear-gradient(180deg, #feda5b 0%, #ecb116 100%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+} */
+.after-login {
+  background-color: var(--bg-card-gray);
+  min-height: 100vh;
+  height: 100%;
+}
+
+.before-login{
+  background-color: var(--bg-dark);
+  min-height: 100vh;
+  height: 100%;
+}

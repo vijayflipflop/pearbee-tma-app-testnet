@@ -1,0 +1,128 @@
+@media screen and (max-width: 768px) {
+  /* HOME PAGE */
+
+  /* .hero_slider {
+    padding: 8px 16px;
+    max-width: 200px;
+    height: 100px;
+    overflow: hidden;
+    margin-left: auto;
+    padding: 13px;
+  } */
+  /* .hero_slider h3 {
+    font-size: 18px;
+    line-height: 25.42px;
+  }
+  .hero_slider p {
+    font-size: 14px;
+    line-height: 20.73px;
+    text-align: left;
+  }
+  .hero_slider_lhs {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 158px;
+    gap: 10px;
+  } */
+}
+
+
+@media (min-width: 768px) {
+  
+  /* LOGIN PAGE */
+
+  .input-container h4 {
+    font-size: 23px;
+  }
+
+  .input-container p {
+    font-size: 16px;
+  }
+
+  .footer-container p {
+    font-size: 16px;
+    line-height: 25.8px;
+  }
+
+ 
+
+  /* INVITE & EARN */
+
+  .inviteEarn-card {
+    padding: 20px 30px;
+    width: 100%;
+    max-width: 670px;
+  }
+  .inviteEarn-title {
+    font-size: 18px;
+  }
+  .inviteEarn-card h6 {
+    font-size: 16px;
+  }
+  .inviteEarn-card p {
+    font-size: 20px;
+  }
+  .offcanvas-header h6,
+  .offcanvas-header p {
+    font-size: 16px;
+  }
+  .offcanvas-header .btn {
+    font-family: var(--font-family-sans);
+    font-size: 14px;
+    padding: 10px;
+  }
+  .offcanvas-body h2 {
+    font-size: 20px;
+  }
+
+  .offcanvas-body span {
+    font-size: 18px;
+  }
+
+  .offcanvas-body p {
+    font-size: 16px;
+  }
+
+  /*YOUR INVITES */
+
+  .invites-card {
+    width: 100%;
+    max-width: 670px;
+    margin: auto;
+    padding: 30px;
+  }
+
+  .invites-card div h2 {
+    font-size: 18px;
+    margin-bottom: 12px;
+  }
+  .invites-card div p {
+    font-size: 14px;
+  }
+  .invites-card p {
+    font-size: 16px;
+  }
+
+  /* REACH US */
+
+  .reachUs-title {
+    font-size: 28px;
+  }
+
+  .reachUs-card h2 {
+    font-size: 18px;
+  }
+  .reachUs-card .reachUs-inside {
+    padding: 20px;
+  }
+}
+
+@media (min-width: 992px) {
+  
+  /* GENERAL */
+
+  .pbee_deal_cards_general .card-body {
+    padding: 20px;
+  }
+}

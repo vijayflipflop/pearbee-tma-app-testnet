@@ -1,0 +1,297 @@
+.ugc_input_group {
+  width: 100%;
+  gap: 8px;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.ugc_container{
+  margin-bottom: 100px;
+}
+
+.ugc_input_group h2 {
+  font-family: var(--font-family-roboto);
+  color: var(--text-white);
+  font-weight: var(--font-weight-400);
+  line-height: 20px;
+  letter-spacing: 0.25px;
+}
+
+.ugc_input {
+  position: relative;
+  width: 100%;
+  height: 38px;
+}
+
+.ugc_input input::placeholder{
+  font-size: 14px;
+  font-family: var(--font-family-roboto);
+  color: var(--text-dark);
+  font-weight: var(--font-weight-400);
+}
+
+.ugc_input input {
+  width: 100%;
+  height: 100%;
+  padding-right: 40px;
+  border-radius: 76px;
+  border: none;
+  padding-left: 20px;
+}
+
+.ugc_input input:focus {
+  outline: none;
+}
+
+.ugc_input ::placeholder {
+  font-family: var(--font-family-roboto);
+  color: var(--text-gray-7);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.25px;
+}
+
+.ugc_input button {
+  width: 100%;
+  max-width: 92px;
+  height: 28px;
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  transform: translateY(-50%);
+  background-color: var(--bg-dark);
+  color: var(--text-white);
+  font-family: var(--font-family-roboto);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.25px;
+  border-radius: 46px;
+  border: none;
+}
+
+.question_container {
+  width: 100%;
+  max-width: 328px;
+  height: 64px;
+  background: var(--bg-blue-gradient);
+  border-radius: 10px;
+  padding: 20px;
+  margin: 15px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.question_container p {
+  font-family: var(--font-family-poppins);
+  color: var(--text-white);
+  font-size: 14px;
+  font-weight: var(--font-weight-600);
+}
+
+.question_container a {
+  font-family: var(--font-family-sans);
+  font-size: 12px;
+  font-weight: var(--font-weight-500);
+  gap: 10px;
+  background-color: var(--bg-white);
+  border-radius: 6px;
+  display: flex;
+  color: var(--text-dark);
+  width: 100%;
+  max-width: 125px;
+  padding: 9px 16px;
+  align-items: center;
+  font-weight: var(--font-weight-500);
+}
+
+.ugc_container .nav {
+  gap: 10px;
+  display: flex;
+}
+
+.ugc_container .nav .nav-item .nav-link {
+  font-family: var(--font-family-roboto);
+  width: 100%;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.25px;
+  color: var(--text-white);
+  background-color: var(--home-bg);
+  border: 1px solid #ffffff1f;
+  border-radius: 40px;
+  background-color: var(--bg-light-gray-2);
+}
+
+.ugc_container .nav .nav-item .nav-link.active {
+  background-color: var(--bg-white);
+  border: 1px solid var(--border-white);
+  color: var(--text-black);
+}
+
+.ugc_container .tab-content {
+  margin: 30px 0px;
+}
+
+.ugc_container .card {
+  border-radius: 10px;
+  margin: 10px 0px;
+}
+
+.ugc_container .card .card-header {
+  border: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--bg-white);
+}
+
+.ugc_container .card .card-header p {
+  width: 100%;
+  max-width: 187px;
+  height: 20px;
+  text-align: center;
+  background-color: rgba(17, 141, 255, 0.2);
+  color: var(--text-blue);
+  border-radius: 40px;
+  font-family: var(--font-family-lato);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14.4px;
+  border: 1px solid var(--text-blue);
+  display: grid;
+  place-items: center;
+}
+
+.ugc_tabs {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.ugc_container .card .card-header span {
+  height: 14px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-family: var(--font-family-poppins);
+  font-size: 10px;
+  font-weight: var(--font-weight-500);
+  line-height: 14px;
+  justify-content: end;
+  color: var(--text-gray-5);
+}
+
+.ugc_container .card .card-body .card_main-heading {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
+  margin-top: 9px;
+}
+
+.ugc_container .card .card-body .card_main-heading h2 {
+  font-family: var(--font-family-sans);
+  font-size: 20px;
+  font-weight: var(--font-weight-700);
+  line-height: 27.24px;
+  color: var(--text-dark);
+  text-align: start;
+}
+
+.ugc_leftago {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0px;
+}
+
+.ugc_leftago p {
+  font-family: var(--font-family-lato);
+  font-weight: var(--font-weight-400);
+  line-height: 14.4px;
+  color: var(--text-light-gray-5);
+  font-size: 12px;
+}
+
+.ugc_options ul li {
+  background-color: var(--border-light-gray-1);
+  border-radius: 20px;
+  font-family: var(--font-family-poppins);
+  font-weight: var(--font-weight-500);
+  line-height: 21px;
+  display: flex;
+  padding: 5px 18px;
+  flex-direction: column;
+  margin-bottom: 8px;
+}
+
+.ugc_container .card-footer {
+  border: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+  margin-top: 20px;
+}
+
+.ugc_container .card-footer p {
+  font-family: var(--font-family-poppins);
+  font-weight: var(--font-weight-500);
+  line-height: 14px;
+  color: var(--text-gray-5);
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 10px;
+}
+
+.ugc_edit_question {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.ugc_edit_question span:nth-child(1) {
+  width: 35px;
+  height: 35px;
+  border-radius: 100%;
+  padding: 10px 15px;
+  display: grid;
+  justify-content: center;
+  cursor: pointer;
+  align-items: center;
+}
+
+.ugc_edit_question span {
+  background-color: var(--text-gray-6);
+  padding: 8px;
+  border-radius: 20px;
+  padding: 10px 15px;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  align-items: center;
+  font-size: 10px;
+  font-family: var(--font-family-poppins);
+}
+
+.ugc_edit_question span a{
+  color: var(--text-dark);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.pearbee_no_records_wrap{
+  display: flex;
+  justify-content: center;
+  min-height: 300px;
+  height: 100%;
+  align-items: center;
+}

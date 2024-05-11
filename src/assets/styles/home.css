@@ -1,0 +1,440 @@
+.navbar-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.navbar-nav .nav-link svg {
+  display: none;
+}
+
+.header_coins_count {
+  background: transparent;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  width: max-content;
+  padding: 10px;
+  height: 30px;
+  border-radius: 8px;
+  border: 1px solid var(--border-info);
+}
+
+.header_coins_lhs {
+  width: 100%;
+  max-width: 59px;
+  height: 100%;
+  font-family: var(--font-family-rubik);
+  background-color: var(--bg-light-dark);
+  font-weight: var(--font-weight-500);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  line-height: 14.22px;
+}
+
+.header_wallet_coin_sec{
+  margin-left: auto;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.header_wallet_coin_sec span{
+  color: var(--text-white);
+}
+
+.header_coins_rhs {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-family-rubik);
+  font-size: 12px;
+  line-height: 14.22px;
+  gap: 5px;
+}
+
+.header_coins_rhs span {
+  margin-top: 2px;
+}
+
+.header_coins_count p {
+  font-family: var(--font-family-nunito);
+  font-size: 14px;
+  font-weight: var(--font-weight-700);
+  line-height: 13.64px;
+  text-align: left;
+  color: var(--text-dark);
+  margin: 0;
+  padding: 7px 0;
+}
+
+.header_coins_count p span {
+  line-height: 19.1px;
+}
+.hero_slider {
+  max-width: 520px;
+  min-height: 100px;
+  border-radius: 12px;
+  padding: 20px;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  /* background: var(--hero-slide-bgone); */
+  margin: 0 30px 0 auto;
+  overflow: hidden;
+}
+
+.slider_blob_first {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.slider_two_bg {
+  /* background: var(--hero-slide-bgtwo); */
+}
+
+.hero_slider_lhs {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 300px;
+  gap: 25px;
+}
+
+.hero_slider h3 {
+  z-index: 1;
+  font-family: var(--font-family-worksans);
+  color: var(--text-white);
+  font-size: 33px;
+  font-weight: 500;
+  line-height: 38px;
+  text-align: left;
+}
+
+.hero_slider p {
+  font-family: var(--font-family-worksans);
+  color: #e3e3e3;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 25px;
+  text-align: left;
+}
+
+.hero_slider img{
+  border-radius: 20px;
+}
+
+.slider_img {
+  position: relative;
+  z-index: 2;
+}
+.slick-dots ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slick-dots li {
+  margin: 0;
+}
+.slick-dots ul li button::before,
+.slick-dots ul li button::after {
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+  opacity: 1;
+  margin-top: 20px;
+}
+.slick-dots ul .slick-active button::before,
+.slick-dots ul .slick-active button::after {
+  /* width: 20px; */
+  background: var(--bg-white);
+  /* border-radius: 4px; */
+}
+
+.pbee_hometab_wrapper {
+  padding: 25px 0;
+}
+
+.pbee_hometab_wrapper .nav {
+  margin: 10px 0px 0px;
+}
+
+.pbee_hometab_wrapper .nav {
+  gap: 20px;
+}
+
+.pbee_hometab_wrapper .nav .nav-item .nav-link {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  color: var(--text-white);
+  min-height: 36px;
+  padding: 12px 12px;
+  gap: 10px;
+  border-radius: 10px;
+  font-family: var(--font-family-nunito);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 19.1px;
+  text-align: center;
+  background: var(--bg-light-dark);
+}
+.pbee_hometab_wrapper .nav .nav-item .nav-link.active {
+  background: var(--slider-bg1);
+}
+.pbee_deal_cards {
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+  background: #1b1212;
+  border: 0.5px solid #ffffff80;
+  position: relative;
+  overflow: hidden;
+  gap: 16px;
+}
+
+.pbee_deal_cards .card-header {
+  width: 100%;
+  min-height: 25px;
+  background: transparent;
+  border: none;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0;
+}
+
+.pbee_deal_cards .card-body {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.pbee_deal_cards .card-header .expire {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  max-width: 140px;
+  min-height: 25px;
+  border-radius: 4px 0px 4px 0;
+  background: #dd2e2c;
+}
+
+.pbee_deal_cards .card-header .expire p {
+  font-family: var(--font-family-worksans);
+  color: var(--text-white);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 14.08px;
+  text-align: left;
+}
+
+.pbee_deal_cards .card-header .views {
+  display: flex;
+  width: 69px;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  background: var(--views-bg);
+  box-shadow: 0px 4px 4px 0px var(--bg-dark);
+  border-radius: 0 0 0 4px;
+}
+
+.pbee_deal_cards .card-header .views p {
+  font-family: var(--font-family-poppins);
+  color: var(--text-white);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+  text-align: center;
+}
+
+.pbee_deal_cards_home {
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+  background: #1b1212;
+  border: 0.5px solid var(--bg-white);
+  position: relative;
+  overflow: hidden;
+  gap: 16px;
+}
+
+.pbee_deal_cards_home .card-header {
+  width: 100%;
+  min-height: 25px;
+  background: transparent;
+  border: none;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0;
+}
+
+.pbee_deal_cards_home .card-body {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.pbee_deal_cards_home .card-header .expire {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  max-width: 140px;
+  min-height: 25px;
+  border-radius: 4px 0px 4px 0;
+  background: #dd2e2c;
+}
+.pbee_deal_cards_home .card-header .expire p {
+  font-family: var(--font-family-worksans);
+  color: var(--text-white);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 14.08px;
+  text-align: left;
+}
+
+.pbee_deal_cards_home .card-header .views {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  background: var(--views-bg);
+  box-shadow: 0px 4px 4px 0px var(--bg-dark);
+  border-radius: 0 0 0 4px;
+}
+
+.pbee_deal_cards_home .card-header .views p {
+  font-family: var(--font-family-poppins);
+  color: var(--text-white);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+  text-align: center;
+}
+
+.card_title_wrapper {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.card_title_wrapper h3 {
+  font-family: var(--font-family-worksans);
+  color: var(--text-white);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18.77px;
+  text-align: left;
+}
+
+.card_update {
+  max-width: 262px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 2px;
+}
+
+.card_update p {
+  font-family: var(--font-family-worksans);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 14.08px;
+  text-align: left;
+  color: var(--text-secondary-subtle);
+}
+
+.card_btns_group {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+@media screen and (max-width: 992px) {
+  .navbar-nav {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .hero_slider {
+    padding: 8px 16px;
+    /* max-width: 300px; */
+    min-height: 100px;
+    overflow: hidden;
+    margin-left: auto;
+    padding: 8px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .slick-slide {
+    width: 100px;
+  }
+  .hero_slider_lhs {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 158px;
+    gap: 25px;
+  }
+  .hero_slider h3 {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16.42px;
+    text-align: left;
+  }
+  .hero_slider p {
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 11.73px;
+    text-align: left;
+  }
+  .slider_blob_first,
+  .slider_blob_second {
+    width: 55px;
+    height: 55px;
+  }
+  .slider_img img {
+    width: 200px;
+    height: 100px;
+  }
+  .text_3 {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16.42px;
+    text-align: left;
+  }
+  .pbee_hometab_wrapper .nav {
+    gap: 8px;
+    justify-content: center;
+  }
+  .pbee_hometab_wrapper .nav .nav-item {
+    /* overflow-x: scroll; */
+  }
+  .pbee_hometab_wrapper .nav .nav-item .nav-link {
+    /* max-width: 155px;
+    min-height: 40px; */
+    margin: 0;
+    padding: 8px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 16.37px;
+    text-align: center;
+    flex-direction: row;
+  }
+}

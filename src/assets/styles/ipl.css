@@ -1,0 +1,277 @@
+.pbee_ipl img {
+  object-fit: cover;
+  object-position: center;
+}
+
+.pbee_ipl h1,
+.pbee_ipl h2 {
+  font-weight: var(--font-weight-500);
+  font-family: var(--font-family-rubik);
+}
+
+.pbee_ipl p {
+  font-family: var(--font-weight-400);
+  font-family: var(--font-family-rubik);
+  color: var(--text-white);
+}
+
+.pbee_ipl h4,
+.pbee_ipl h1,
+.pbee_card_joining h2,
+.pbee_ipl_pick_voice_card h3,
+.pbee_ipl_pick_voice_card_2_header span,
+.pbee_ipl_pick_voice_card_2_header h4,
+.pbee_ipl_pick_voice_card_2_footer h2,
+.pbee_ipl_active_room {
+  font-style: italic;
+}
+
+.pbee_ipl h4 {
+  font-family: var(--font-family-tourney);
+  text-align: center;
+}
+
+.pbee_ipl_banner h4 {
+  margin-top: 8.5px;
+}
+
+.pbee_ipl_banner {
+  background: var(--bg-ipl-banner);
+  text-align: center;
+  padding: 24px;
+}
+
+.pbee_ipl h1 {
+  line-height: 28.44px;
+  border-bottom: 3px dashed var(--border-white);
+  padding-bottom: 10px;
+  font-size: 24px;
+  font-weight: var(--font-weight-500);
+  line-height: 28.44px;
+}
+
+.pbee_ipl_banner h4 {
+  font-size: 24px;
+  font-weight: var(--font-weight-500);
+  color: var(--text-warning-2);
+  font-family: var(--font-family-tourney);
+}
+
+.pbee_ticket {
+  letter-spacing: 2px;
+}
+
+.pbee_ipl_banner p {
+  margin-top: 11px;
+  font-family: var(--font-family-rubik);
+  font-size: 10px;
+  line-height: 14.22px;
+}
+
+.pbee_ipl_discount {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 19px;
+  margin-top: 20px;
+}
+
+.pbee_ipl_discount div h2 {
+  text-decoration: line-through;
+  color: var(--text-gray-4);
+}
+
+.pbee_ipl_discount > h2 {
+  font-size: 42px;
+  font-family: var(--font-family-rubik);
+  line-height: 49.77px;
+}
+
+.pbee_ipl_pick_voice h4 {
+  padding: 8px 0px;
+  background-color: var(--text-light-white-2);
+  font-style: normal;
+  font-size: 20px;
+  font-family: var(--font-family-tourney);
+}
+
+.pbee_ipl_pick_voice_card {
+  width: 100%;
+  max-width: 350px;
+  min-height: 336px;
+  background: url("../images/pbee-voice-card.png");
+  background-color: var(--bg-puple);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 1px solid;
+  overflow: hidden;
+  border-color: linear-gradient(214.98deg, #ffffff -10.84%, #2a2a2a 103.85%);
+  margin: 24px auto 0px;
+}
+.pbee_ipl_card_header {
+  margin-top: 16px;
+  text-align: center;
+}
+.pbee_card_joining,
+.pbee_ipl_card_footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+}
+.pbee_card_joining {
+  margin: 19px 0px;
+}
+
+.pbee_ipl_pick_voice_card h3 {
+  background: var(--bg-purple-dark);
+  padding: 7px;
+  text-align: center;
+  font-weight: var(--font-weight-700);
+  margin: 16px 0px;
+}
+.pbee_ipl_soon {
+  height: 70px;
+  position: relative;
+}
+.pbee_ipl_soon div h2 {
+  width: 100%;
+  max-width: 250px;
+  padding-left: 30px;
+  padding-top: 10px;
+  height: 40px;
+  background-color: var(--bg-purple-2);
+  position: absolute;
+  transform: skew(-20deg);
+  bottom: 0;
+  right: -8px;
+}
+.pbee_ipl_soon img {
+  position: absolute;
+  left: 85px;
+  z-index: 100;
+}
+
+.pbee_ipl_card_footer {
+  text-align: center;
+  padding: 0px 10px;
+  margin: 14px 0px 6px;
+}
+
+.pbee_ipl_pick_voice_card_2 {
+  border: 1px solid var(--border-white);
+  position: relative;
+  margin-top: 24px;
+}
+
+.pbee_ipl_pick_voice_card_2_header span {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: var(--bg-success);
+  padding: 5px;
+  font-size: 14px;
+  color: var(--text-white);
+}
+
+.pbee_ipl_pick_voice_card_2_header,
+.pbee_ipl_listening,
+.pbee_ipl_no_of_listening,
+.avatar-group,
+.pbee_ipl_pick_voice_card_2_footer,
+.pbee_ipl_pick_voice_card_2_footer_name {
+  display: flex;
+  align-items: center;
+}
+
+.pbee_ipl_pick_voice_card_2_header {
+  gap: 17px;
+  padding: 8px;
+}
+
+.pbee_ipl_pick_voice_card_2_header h4 {
+  color: var(--text-warning-2);
+  background-color: inherit;
+  padding: 0px;
+  text-align: start;
+  line-height: 26.4px;
+  letter-spacing: 2px;
+  font-size: 24px;
+  margin-top: 5px;
+}
+.pbee_ipl_listening {
+  width: 100%;
+  gap: 15px;
+}
+.pbee_ipl_no_of_listening {
+  gap: 3px;
+  flex: 4;
+  margin-top: 8px;
+}
+
+.pbee_ipl_no_of_listening h2 {
+  font-size: 16px;
+}
+
+.avatar-group {
+  position: relative;
+  flex: 1;
+}
+
+.avatar {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.avatar-2 {
+  position: absolute;
+  left: 10px;
+}
+.avatar-3 {
+  position: absolute;
+  left: 20px;
+}
+.pbee_ipl_pick_voice_card_2_footer {
+  justify-content: space-between;
+  padding: 8px;
+  border-top: 1px solid white;
+}
+.pbee_ipl_pick_voice_card_2_footer > div {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.pbee_ipl_pick_voice_card_2_footer p {
+  line-height: 16.59px;
+}
+.pbee_ipl_pick_voice_card_2_footer_name {
+  gap: 4px;
+}
+.pbee_ipl_pick_voice_card_2_footer_name span {
+  padding: 2px 4px;
+  background-color: var(--bg-light-gray-2);
+  font-family: var(--font-family-worksans);
+  color: var(--text-white);
+}
+
+.pbee_ipl_pick_voice_card_2_footer_name p {
+  color: var(--text-light-gray-6);
+}
+.pbee_ipl_pick_voice_card_2_footer h2 {
+  padding: 6px 12px;
+  background-color: var(--bg-purple-2);
+}
+.pbee_ipl_active_room {
+  position: absolute;
+  bottom: -46px;
+  right: -1px;
+  font-weight: var(--font-weight-500);
+  background-color: var(--bg-success);
+  color: var(--text-white);
+  padding: 10px 13px;
+  border-top: none;
+  border: 1px solid var(--border-white);
+}

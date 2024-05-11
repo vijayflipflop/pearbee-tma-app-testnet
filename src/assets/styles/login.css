@@ -1,0 +1,169 @@
+body {
+  font-family: "Rubik", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  background: #0a0a0a;
+}
+
+.apptitle {
+  font-family: "Inter", sans-serif;
+  font-size: 37px;
+  font-style: normal;
+  font-weight: bolder;
+  /* color: black; */
+  text-align: center;
+  background-image: linear-gradient(88.93deg, #1f98e8 18.91%, #02d0de 79.91%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 10px 16px 0px 16px;
+  line-height: 40px;
+}
+
+.subtitle {
+  font-family: "Rubik", sans-serif;
+  font-size: 30px;
+  font-style: normal;
+  text-align: center;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 4px 16px 2px 16px;
+}
+
+.sub1title {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  color: #c7c7c7;
+  font-weight: 500;
+  margin-top: 4px;
+  text-align: center;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+.abouttext {
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.image-section img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.image-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  border-radius: 25px;
+  /* Add some negative margin to offset padding */
+}
+
+.image-container .image-item {
+  /* flex-basis: calc(33.33% - 10px); */
+  /* 33.33% for each image with 5px padding */
+  margin: 5px;
+  width: 90%;
+  text-align: center;
+  /* Add padding between images */
+}
+
+.image-container .image-item img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.sticky-bottom {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* width: 100%; */
+  background-color: rgb(236, 236, 236);
+  color: white;
+  text-align: center;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+.bottom-space {
+  height: 100px;
+}
+
+.topnav {
+  background-color: #12172c;
+  overflow: hidden;
+  height: 72px;
+  width: 100%;
+}
+
+.topnav-logo {
+  float: left;
+  height: 100%;
+  padding: 0 15px;
+  display: flex;
+  align-items: center;
+}
+
+.topnav-logo img {
+  height: 100%;
+}
+
+.topnav-button {
+  float: right;
+  height: 100%;
+  padding: 0 15px;
+  display: flex;
+  align-items: center;
+}
+
+.topnav-button a {
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+
+  font-weight: 600;
+
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  background-color: #0098ea;
+  padding: 16px 24px;
+  border-radius: 32px;
+}
+
+/* .topnav-button a:hover {
+    background-color: #45a049;
+} */
+
+.topnav-button .icon {
+  height: 26px;
+  width: 26px;
+  margin-right: 8px;
+  display: flex;
+}
+
+.topnav-button button {
+  padding: 30px;
+  height: 10px;
+}
+
+.topnav-button button div {
+  font-size: 20px;
+}
+
+.topnav-button button svg {
+  width: 30px;
+  height: 30px;
+}

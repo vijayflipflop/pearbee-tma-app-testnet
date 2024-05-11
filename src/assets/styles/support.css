@@ -1,0 +1,48 @@
+.reachUs_container{
+  height: 80vh;
+  display: grid;
+  align-items: center;
+  width: 100%;
+  max-width: 320px;
+  margin: auto;
+}
+
+
+.reachUs_container h1 {
+  color: var(--text-primary);
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+  font-family: var(--font-family-poppins);
+  line-height: 36px;
+  margin-bottom: 72px;
+}
+
+.reachUs_card h2 {
+  font-family: var(--font-family-poppins);
+  font-size: 14px;
+  font-weight: var(--font-weight-600);
+  line-height: 21px;
+}
+
+.reachUs_card .reachUs_inside {
+  background-color: var(--bg-secondary);
+  padding: 20px 10px;
+  border-radius: 8px;
+}
+
+.reachUs_card .reachUs_inside p {
+  font-family: var(--font-family-poppins);
+  font-size: 14px;
+  font-weight: var(--font-weight-500);
+  line-height: 21px;
+  color: var(--text-white);
+}
+
+.reachUs_card .reachUs_inside p a {
+  color: var(--text-primary);
+  font-family: var(--font-family-poppins);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 21px;
+}

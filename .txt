@@ -1,0 +1,111 @@
+font-style, font-size,  need to declare one time it's from root-element only.
+card width max-width based on screen need to updated.
+model, offcanvas, whatever bootstrap component was need to reusable.
+globalized styles are not mentioned in global.css
+styles are need to use commonly and make it style hierarchical.
+
+
+user bet flow
+    1. logged with phonenumber and get otp and registerd the user.
+    2. listed the live questions
+    3. selected the category and get the category details with list of questions.
+    4. questions-details overview and completed the pole.
+    5. pole is completed the success the tranasction.
+    6. get the recent tranasction in our profile redirect to tranasction and get tha account sections.
+
+8/4/24
+    create question date validations from and end date. and color changes.
+    api
+        question create by me need api
+
+    header 
+        total-coins = app/getUsersBalance => total
+    wallet = app/getUsersBalance
+        yourbalance = total
+        winnings = bonus
+    portfolio event get details
+        live events = app/getProtofolioLive
+       details events =  app/getProtofolioLiveDetails?questionId=146766
+
+12/4/24
+    header and slider after card sections - home page
+    event-overview section
+    ugc
+    ugc-ask
+    portfolio
+    support
+    leaderboard
+
+
+
+  /* --text-gray-5: #787878;
+  --text-gray-6: #dedede;
+  --text-gray-7: #cecece;
+  --text-gray-8:#3C3C3C;
+  --text-gray-9:#858585;
+  --text-sandal: #dafffd;
+  --text-sandal: #dafffd;
+  --text-sky-blue: #73FFE0;
+
+  --text-gray-5: #787878;
+  --text-gray-6: #dedede;
+  --text-gray-7: #cecece;
+  --text-gray-8: #A0A0A0;
+
+
+VIJAYARAGAVENDRAN-12-04-2024 - PEARBEE
+--COMPLETED--
+
+1.Settings page 
+ -wallet -> Recharge
+ -wallet -> Recent Transactions
+
+--Refer & Earn -> Invite & Earn and OffCanvas
+--Refer & Earn -> Your Invites
+
+2.IPL Trivizha page
+
+mix panel update screen 
+  click_wallet_button;
+
+Doubted Mixpanel
+    static const String liveportfolio = "live_event_page";
+    static const String closedportfolio = "close_event_page";
+    static const String clickQuestionDetailpoll =
+    "click_poll_page_question_details";
+    static const String successTradesPlaced = "answer_submit_sucessful";
+    static const String successTradeinitialize = "answer_submit_initialize";
+    static const String successTradefailed = "answer_submit_failed";
+    static const String pollpage = "poll_page";
+    static const String addMoney = "recharge_page";
+    static const String addMoneyclick = "click_recharge_button";
+    static const String transaction = "recent_transaction_page";
+    static const String addMoneyintialize = "recharge_submit_initialize";
+    static const String withdrawMoneyintialize = "withdraw_submit_initialize";
+    static const String accountTransactionsVisit = "account_transaction_page";
+    static const String bonusTransactionsVisit = "bonus_transaction_page";
+    static const String winningsTransactionsVisit = "winnings_transaction_page";
+    static const String clickBanner = "click_banner_button";
+    static const String joinTradeLiveevent = "click_live_event_question";
+    static const String joinTradecloseevent = "click_close_event_question";
+updated_event_pages
+    static const String clickWallet = "click_wallet_button";
+    static const String homePage = "home_page";
+    static const String leaderboardPage = "leaderboard_page";
+    static const String hometoWalletPage = "wallet_page";
+    static const String clickportfolio = "click_portfolio_button";
+    static const String clickbreakup = "click_winnings_breakup_button";
+    static const String clickHomescreenQuestion = "click_home_page_answer_button";
+    static const String clickQuestionDetail = "click_home_page_question_details";
+    static const String clickeventDetailnscreenQuestion =
+    "click_question_page_answer_button";
+    static const String clickCategory = "click_category_button";
+    static const String categoryPage = "category_page";
+    static const String clickleaderboard = "click_leaderboard_button";
+    static const String questionPage = "question_page";
+    static const String clickrecentTransaction ="click_recent_transaction_button";
+    static const String clickQuestionDetailevent ="click_category_page_question_details";
+    static const String clickevetnscreenQuestion ="click_category_page_answer_button";
+
+mainnet ton pharse
+joy kid split snake aerobic never alpha tooth much mimic mom guilt jewel only erosion clever receive kingdom canvas pause ladder frown voice near

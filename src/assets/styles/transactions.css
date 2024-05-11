@@ -1,0 +1,205 @@
+/* TRANSACTIONS PAGE */
+
+.transaction_navbar {
+  background-color: var(--common-bg);
+  border: none;
+}
+
+.transaction_navbar h1 {
+  font-family: var(--font-family-sans);
+  line-height: 27.24px;
+  font-size: 20px;
+}
+
+.transaction_container {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.transaction_container .nav {
+  gap: 10px;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--border-light-gray);
+}
+
+.transaction_container .tab-content {
+  padding: 0px 12px;
+}
+.transaction_container .nav-item {
+  flex: 1;
+}
+
+.transaction_container .nav-item .nav-link {
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid transparent;
+  color: var(--text-light-gray-3);
+  font-family: var(--font-family-sans);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 19.07px;
+  padding-bottom: 21px;
+  text-align: center;
+}
+
+.transaction_container .nav-item .nav-link.active {
+  border-bottom: 2px solid var(--border-light-gray-1);
+  color: var(--text-white);
+}
+
+.transaction_card_group {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+
+.transaction_container .tab-content {
+  margin-top: 30px;
+}
+
+.transaction_card {
+  border: 1px solid var(--border-white);
+  border-radius: 16px;
+  padding: 15px;
+}
+
+.transaction_card h5 {
+  font-family: var(--font-family-poppins);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+  color: var(--text-white);
+}
+
+.main_transaction_class {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 5px 5px 0px;
+  border-bottom: 1px solid var(--border-white);
+}
+
+.main_transaction_class div h6 {
+  font-family: var(--font-family-poppins);
+  font-weight: var(--font-weight-500);
+}
+
+.lhs_col h6 {
+  color: var(--text-white);
+  font-size: 10px;
+  line-height: 15px;
+}
+
+.lhs_col p {
+  font-family: var(--font-family-poppins);
+  font-size: 12px;
+  line-height: 18px;
+  margin-bottom: 1rem;
+}
+
+.rhs_col h6 {
+  font-size: 14px;
+  line-height: 21px;
+  margin-bottom: 0;
+}
+.rhs_col p {
+  color: var(--text-white);
+  font-size: 8px;
+  line-height: 12px;
+  text-align: end;
+}
+
+.transaction_sec_content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-left: 12px;
+}
+
+.transaction_sec_content p {
+  color: var(--text-white);
+  font-family: var(--font-family-lato);
+  line-height: 14.4px;
+  letter-spacing: 1px;
+}
+
+.transaction_sec_content span {
+  color: var(--text-secondary-subtle);
+  font-family: var(--font-family-lato);
+  font-weight: var(--font-weight-400);
+  font-size: 10px;
+  line-height: 9.6px;
+  letter-spacing: 1px;
+}
+
+.transaction_inc {
+  color: var(--text-sky-blue);
+  font-family: var(--font-family-sans);
+  text-align: right;
+  font-family: var(--font-weight-600);
+
+}
+
+.transaction_dec {
+  color: var(--text-danger);
+  text-align: right;
+  font-family: var(--font-family-sans);
+}
+
+.transaction_type_wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.transaction_type_wrap p:nth-child(2) {
+  font-size: 14px;
+  color: var(--text-secondary-subtle);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  justify-content: right;
+  font-size: 8px;
+  line-height: 9.6px;
+  letter-spacing: 1px;
+}
+
+/* RESPONSIVE */
+
+@media (min-width: 576px) {
+  .transaction_container .nav {
+    justify-content: flex-start;
+  }
+}
+
+@media (min-width: 992px) {
+  .transaction_container ul .nav-item .nav-link.active {
+    font-size: 16px;
+  }
+  .transaction_container ul .nav-item .nav-link {
+    font-size: 16px;
+  }
+  .transaction_card_group {
+    gap: 30px;
+  }
+  .transaction_card h5 {
+    font-size: 14px;
+  }
+  .transaction_card {
+    padding: 25px;
+  }
+  .lhs_col h6 {
+    font-size: 14px;
+    margin-bottom: 4px;
+  }
+
+  .lhs_col p {
+    font-size: 16px;
+  }
+  .rhs_col h6 {
+    font-size: 18px;
+  }
+  .rhs_col p {
+    font-size: 12px;
+  }
+}

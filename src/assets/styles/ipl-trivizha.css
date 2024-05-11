@@ -1,0 +1,546 @@
+#iplTrivizha * {
+  font-family: var(--font-family-rubik);
+}
+
+.ipl_trivizha_header h1 {
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.ipl_slider {
+  padding: 10px 0px 0px;
+}
+
+.inner_ipl_slider {
+  height: 160px;
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  text-align: center;
+}
+
+.ipl_slider_img {
+  padding: 3px;
+  position: relative;
+}
+
+.ipl_host_graphic_eq {
+  position: absolute;
+  left: 56px;
+  top: 56px;
+}
+
+.ipl_trivizha_img_border_host,
+.ipl_trivizha_img_border {
+  border-radius: 50%;
+}
+
+.ipl_trivizha_img_border_host {
+  border: 1px solid var(--border-blue);
+}
+
+.ipl_trivizha_img_border {
+  border: 1px solid var(--border-white);
+}
+
+.inner_ipl_slider_highlights_host {
+  transform: scale(1.25);
+}
+
+.inner_ipl_slider_NotHighlights_host {
+  transform: scale(1);
+}
+
+.ipl_stories_guest_details {
+  display: flex;
+  flex-direction: column;
+}
+
+.ipl_stories_guest_details h6 {
+  font-size: 14px;
+  font-weight: var(--font-weight-500);
+  line-height: 16.59px;
+}
+
+.ipl_stories_guest_details small {
+  font-size: 12px;
+  font-weight: var(--font-weight-300);
+  line-height: 11.85px;
+}
+
+.ipl_stories_speaking {
+  color: var(--text-blue);
+}
+.ipl_stories_notSpeaking {
+  color: var(--text-white);
+}
+
+/* IPL TRIVIZHA MAIN */
+
+.ipl_trivizha_main {
+  margin-top: 40px;
+}
+
+.ipl_trivizha_main_row {
+  margin-bottom: 200px;
+}
+
+.ipl_trivizha_main_header h3 {
+  background: var(--bg-light-white-2-gradiant);
+  text-align: center;
+  padding: 8px;
+  letter-spacing: 2px;
+  line-height: 23.7px;
+  font-size: 20px;
+}
+
+.ipl_trivizha_main_header span {
+  font-family: var(--font-family-tourney);
+  color: var(--text-warning-2);
+  font-style: italic;
+  line-height: 22px;
+}
+
+.ipl_trivizha_main .card {
+  padding: 0;
+  margin: 0 0 16px;
+}
+
+.ipl_trivizha_main .card .card-header,
+.ipl_trivizha_main .card .card-body,
+.ipl_trivizha_main .card .card-footer {
+  padding: 13px 16px;
+}
+
+.ipl_trivizha_main .card .card-header {
+  border-bottom: 1px solid var(--border-light-gray-3-gradiant);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ipl_trivizha_main .card .card-header p,
+.ipl_trivizha_main .card .card-footer p {
+  color: var(--text-gray-9);
+  font-weight: var(--font-weight-500);
+  font-size: 12px;
+  line-height: 14.22px;
+}
+
+.card_main-heading h2 {
+  font-size: 20px;
+  font-weight: var(--font-weight-500);
+  line-height: 18.96px;
+  color: var(--text-dark-2);
+  margin-bottom: 16px;
+}
+
+.ipl_trivizha_main .card .card-footer {
+  border-top: 1px solid var(--border-light-gray-3-gradiant);
+}
+
+.ipl_trivizha_options ul li {
+  border-radius: 30px;
+  border: 1px solid var(--border-gray-2);
+  font-weight: var(--font-weight-400);
+  color: var(--text-gray-8);
+  text-align: center;
+  line-height: 16.59px;
+  padding: 8px;
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+
+/* Bottom Menu Styles */
+
+.ipl_trivizha_msg_input_container {
+  width: 100%;
+  position: fixed;
+  background-color: var(--bg-dark);
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 11px 8px;
+}
+
+.ipl_trivizha_msg_input_container input {
+  width: 100%;
+  padding: 10px 80px 10px 10px;
+  border: 1px solid var(--border-gray-2);
+  background-color: transparent;
+  color: var(--text-light-gray-7);
+  border-radius: 50px;
+}
+
+.ipl_trivizha_inner_container,
+.ipl_trivizha_get,
+.ipl_trivizha_get div,
+.ipl_trivizha_speak {
+  display: flex;
+  align-items: center;
+}
+
+.ipl_trivizha_inner_container {
+  justify-content: space-between;
+  gap: 23px;
+  padding: 0;
+}
+
+.ipl_trivizha_input {
+  position: relative;
+  width: 100%;
+}
+
+.ipl_trivizha_input .btn {
+  position: absolute;
+  right: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.ipl_trivizha_get {
+  flex-direction: column;
+  gap: 5px;
+}
+
+.ipl_trivizha_get div {
+  gap: 2px;
+  color: var(--text-white);
+  font-weight: var(--font-weight-400);
+  line-height: 11.85px;
+}
+
+.ipl_trivizha_speak {
+  min-width: 40px;
+  min-height: 40px;
+  border-radius: 50%;
+  border: 1px solid var(--text-light-gray-7);
+  justify-content: center;
+}
+
+/* Comments Styles */
+
+.ipl_trivizha_comments {
+  width: 100%;
+  background: var(--bg-transparent-gray);
+  overflow: hidden;
+  display: flex;
+  align-items: end;
+  position: fixed;
+  bottom: 67px;
+  backdrop-filter: blur(10px);
+}
+
+.ipl_trivizha_comments ul {
+  width: 100%;
+  height: 125px;
+  overflow: scroll;
+  display: grid;
+  align-items: end;
+}
+
+.ipl_trivizha_comments ul li {
+  border-bottom: 1px dashed var(--text-light-gray-6);
+  padding: 6px 0;
+  margin: 0 16px;
+}
+
+.ipl_trivizha_comment_list {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.ipl_trivizha_comment_user_img img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+.ipl_trivizha_comment_user_comment {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.ipl_trivizha_comment_user_comment h4 {
+  color: var(--text-white);
+  font-weight: var(--font-weight-500);
+  font-size: 12px;
+  line-height: 14.22px;
+}
+
+.ipl_trivizha_comment_user_comment p {
+  font-size: 10px;
+  line-height: 11.85px;
+  color: var(--text-light-white);
+}
+
+/* Video Call Styles */
+
+.pbee_ipl_trivizha_videoCall {
+  position: fixed;
+  bottom: 80px;
+  right: 8px;
+}
+
+.pbee_ipl_trivizha_close {
+  text-align: end;
+  padding: 5px;
+}
+
+.pbee_ipl_trivizha_videoCall_inner {
+  background-color: var(--bg-dark-2);
+  padding: 4px 4px 8px 4px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  border-radius: 8px;
+}
+
+.pbee_ipl_trivizha_video {
+  position: relative;
+  border: 1px solid var(--border-white);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.pbee_ipl_trivizha_host_name {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 2px 4px;
+  display: flex;
+  justify-content: space-between;
+  background: var(--bg-transparent-gray-2);
+  backdrop-filter: blur(10px);
+  align-items: center;
+}
+
+.pbee_ipl_trivizha_host_name h3,
+.pbee_ipl_trivizha_host_name small,
+.pbee_ipl_trivizha_video_screen_name
+  h3
+  .pbee_ipl_trivizha_video_screen_name
+  small {
+  font-weight: var(--font-weight-400);
+}
+
+.pbee_ipl_trivizha_host_name h3 {
+  line-height: 14.22px;
+}
+
+.pbee_ipl_trivizha_host_name small {
+  color: var(--text-light-gray-6);
+}
+
+.pbee_ipl_trivizha_video img {
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Video Screen Page Styles */
+
+.pbee_ipl_trivizha_video_screen_page {
+  padding: 34px 16px 0px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.pbee_ipl_trivizha_video_screen {
+  border: 1px solid var(--border-white);
+  width: 100%;
+  max-width: 328px;
+  height: 173px;
+  margin: auto;
+  border-radius: 8px;
+}
+.pbee_ipl_trivizha_video_screen img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.pbee_ipl_trivizha_video_screen {
+  position: relative;
+  overflow: hidden;
+}
+
+.pbee_ipl_trivizha_video_screen_name {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 4px 8px;
+  display: flex;
+  justify-content: space-between;
+  background: var(--bg-transparent-gray-2);
+  backdrop-filter: blur(10px);
+  align-items: center;
+}
+
+.pbee_ipl_trivizha_video_screen_name h3 {
+  font-size: 18px;
+  line-height: 21.33px;
+}
+
+.pbee_ipl_trivizha_video_screen_name small {
+  font-size: 14px;
+  line-height: 16.59px;
+  color: var(--text-light-gray-6);
+}
+
+@media (min-width: 768px) {
+  .ipl_trivizha_main_header h3 {
+    font-size: 30px;
+    padding: 12px;
+    line-height: 35.55px;
+  }
+
+  .ipl_trivizha_main_header span {
+    font-size: 20px;
+    line-height: 22px;
+  }
+
+  .card_main-heading h2 {
+    font-size: 24px;
+    line-height: 28.44px;
+  }
+
+  .ipl_trivizha_main .card .card-header img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .ipl_trivizha_main .card .card-header p,
+  .ipl_trivizha_main .card .card-footer p {
+    font-size: 16px;
+    line-height: 18.96px;
+  }
+
+  .ipl_trivizha_main .card .card-body {
+    padding: 20px 16px;
+  }
+  .ipl_trivizha_options ul li {
+    width: 100%;
+    max-width: 450px;
+    margin: auto;
+    line-height: 21.33px;
+    padding: 12px;
+    margin-top: 16px;
+    font-size: 24px;
+  }
+
+  .ipl_trivizha_msg_input_container {
+    padding: 24px;
+  }
+
+  .ipl_trivizha_msg_input_container input {
+    font-size: 14px;
+    line-height: 16.59px;
+  }
+
+  .ipl_trivizha_get div {
+    font-size: 14px;
+    line-height: 16.59px;
+  }
+
+  .ipl_trivizha_speak {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+
+  .ipl_trivizha_input .btn {
+    right: 10px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .ipl_slider .slick-prev,
+  .ipl_slider .slick-next {
+    width: auto;
+    height: auto;
+    top: 200px;
+  }
+
+  .ipl_trivizha_main {
+    margin-top: 80px;
+  }
+
+  .ipl_slider .slick-prev {
+    left: auto;
+    right: 60px;
+  }
+
+  .ipl_slider .slick-next {
+    right: 20px;
+  }
+
+  .ipl_slider .slick-next::before {
+    content: url("../images/arrow-right.png");
+  }
+  .ipl_slider .slick-prev::before {
+    content: url("../images/arrow-left.png");
+  }
+  .ipl_stories_guest_details h6 {
+    font-size: 24px;
+    line-height: 28.44px;
+  }
+
+  .ipl_stories_guest_details small {
+    font-size: 18px;
+    line-height: 21.33px;
+  }
+
+  .ipl_stories_speaking {
+    color: var(--text-blue);
+  }
+
+  .ipl_stories_notSpeaking {
+    color: var(--text-white);
+  }
+
+  .ipl_trivizha_main_header h3 {
+    padding: 35px;
+    line-height: 41.48px;
+  }
+
+  .card_main-heading h2 {
+    font-size: 30px;
+    line-height: 35.55px;
+    text-align: center;
+  }
+
+  .ipl_trivizha_main .card .card-body {
+    padding: 30px 16px;
+  }
+
+  .ipl_trivizha_options ul li {
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    line-height: 28.44px;
+    padding: 12px;
+    margin-top: 20px;
+    font-size: 24px;
+  }
+
+  .ipl_trivizha_main .card .card-header p,
+  .ipl_trivizha_main .card .card-footer p {
+    font-size: 20px;
+    line-height: 23.7px;
+  }
+
+  .ipl_trivizha_main .card .card-header img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .ipl_trivizha_msg_input_container {
+    display: none;
+  }
+}
