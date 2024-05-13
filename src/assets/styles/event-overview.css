@@ -136,8 +136,8 @@
 }
 
 .event_overview_offcanvas.offcanvas-bottom{
-  height: max-content;
-  max-height: 80vh;
+  /* height: max-content;
+  max-height: 80vh; */
   /* height: max-content; */
 }
 
