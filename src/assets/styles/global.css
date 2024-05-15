@@ -384,7 +384,8 @@ a:hover {
 }
 
 .offcanvas.offcanvas-bottom {
-  height: 55vh;
+  /* height: 55vh; */
+  height: max-content;
 }
 
 .offcanvas .offcanvas-header {
