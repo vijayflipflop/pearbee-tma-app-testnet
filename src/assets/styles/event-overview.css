@@ -384,7 +384,7 @@
 
 .event_success_offcanvas .offcanvas-body {
   text-align: center;
-  margin-top: 33px;
+  margin: 33px 0px 33px 0px;
 }
 
 .event_success_offcanvas .offcanvas-body p {

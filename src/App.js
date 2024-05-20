@@ -44,7 +44,7 @@ function App() {
       walletsListConfiguration={{
         includeWallets: wallets,
       }}
-      setOptions={{ network: 'mainnet', disableTestnet: true }}
+      setOptions={{ network: "testnet" }}
       actionsConfiguration={{
         twaReturnUrl: "https://t.me/pearbeeui_bot/PearBee",
       }}

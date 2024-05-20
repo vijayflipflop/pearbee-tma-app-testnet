@@ -4,8 +4,10 @@ import { LIVE_QUESTIONS } from "core/service/api.url.service";
 import { Col } from "react-bootstrap";
 import QuestionCard from "components/common/question-card";
 import { Loading } from "components/common/loading";
+import { useSelector } from "react-redux";
 
 const QuestionList = () => {
+  const reloadApi = useSelector((state) => state.account?.reloadWallet);
   const [posts, setPosts] = useState([]);
   const [totalPosts, setTotalPosts] = useState(0);
   const [isLoading, setIsLoading] = useState(true);
@@ -58,7 +60,7 @@ const QuestionList = () => {
   }, []);
 
   useEffect(() => {
-    if(page){
+    if (page) {
       console.log("page::", page);
       fetchQuestions(page);
     }
@@ -86,6 +88,12 @@ const QuestionList = () => {
       window.removeEventListener("scroll", handleOnScroll);
     };
   }, [visible, totalPosts]);
+
+  useEffect(() => {
+    if (reloadApi && page) {
+      fetchQuestions(page);
+    }
+  }, [reloadApi, page]);
 
   return (
     <div className="container dashboard_bottom_wrapper">

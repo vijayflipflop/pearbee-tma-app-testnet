@@ -6,7 +6,6 @@ import { CATEGORY, GET_BANNER } from "core/service/api.url.service";
 import CategoryLinks from "./category-links";
 import DashSlider from "./slider";
 import QuestionList from "./QuestionList";
-import { useTonConnectUI } from "@tonconnect/ui-react";
 
 const DashComponents = () => {
   const [isLoading, setIsLoading] = useState(false);

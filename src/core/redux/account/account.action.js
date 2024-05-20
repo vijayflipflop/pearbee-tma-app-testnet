@@ -46,6 +46,13 @@ export const reloadWalletAction = (payload) => dispatch => {
     })
 };
 
+export const reloadApiAfterBetAction = (payload) => dispatch => {
+    dispatch({
+        type: RELOAD_WALLET_ACTIONS,
+        payload,
+    })
+};
+
 export const tonLoggedAction = (payload) => dispatch => {
     dispatch({
         type: TON_LOGGED_ACTION,

@@ -85,7 +85,7 @@ const Header = (props) => {
             {location.pathname === Routeconst.DASH_PATH
               ? utils.regularActivePlayIcon(24, 24)
               : utils.regularIcon(24, 24)}
-            Regular Play
+            Regular Play 
           </Nav.Link>
           <Nav.Link as={Link} to={Routeconst.UGC}>
             {location.pathname === Routeconst.UGC
@@ -161,7 +161,7 @@ const Header = (props) => {
                 width={30}
                 height={30}
                 style={{ objectFit: "cover" }}
-              />
+              /> 
             </span>
           </li>
         </ul>

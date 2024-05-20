@@ -7,6 +7,7 @@ import {
   USER_WALLET_ACTIONS,
   RELOAD_WALLET_ACTIONS,
   TON_LOGGED_ACTION,
+  RELOAD_API_AFTER_BET_ACTIONS,
 } from "../constant";
 import {
   setAuthUser,
@@ -24,6 +25,7 @@ const initialState = {
   wallet: null,
   reloadWallet: false,
   isLoggedTon: false,
+  reloadApi: false
 };
 
 const account = (state = initialState, action) => {
@@ -61,6 +63,11 @@ const account = (state = initialState, action) => {
       return {
         ...state,
         reloadWallet: payload,
+      };
+    case RELOAD_API_AFTER_BET_ACTIONS:
+      return {
+        ...state,
+        reloadApi: payload,
       };
     case TON_LOGGED_ACTION:
       return {

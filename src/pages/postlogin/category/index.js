@@ -12,8 +12,10 @@ import QuestionCard from "components/common/question-card";
 import { Loading } from "components/common/loading";
 import { utils } from "core/helper";
 import { Col } from "react-bootstrap";
+import { useSelector } from "react-redux";
 
 const Category = () => {
+  const reloadApi = useSelector((state) => state.account?.reloadWallet);
   const { id } = useParams();
   const [isLoading, setIsLoading] = useState(false);
   const [posts, setPosts] = useState([]);
@@ -130,6 +132,12 @@ const Category = () => {
       window.removeEventListener("scroll", handleOnScroll);
     };
   }, [visible, totalPosts]);
+
+  useEffect(() => {
+    if (reloadApi && page) {
+      fetchQuestions(page);
+    }
+  }, [reloadApi, page]);
 
   return (
     <div className="page_container">

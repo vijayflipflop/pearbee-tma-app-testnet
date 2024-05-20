@@ -256,16 +256,16 @@ const Login = (props) => {
 
   // }
 
-  const getAccountInfo = async (accessToken, account) => {
-    return (
-      await fetch(`${baseURL}/dapp/getAccountInfo?network=${account.chain}`, {
-        headers: {
-          Authorization: `Bearer ${accessToken}`,
-          "Content-Type": "application/json",
-        },
-      })
-    ).json();
-  };
+  // const getAccountInfo = async (accessToken, account) => {
+  //   return (
+  //     await fetch(`${baseURL}/dapp/getAccountInfo?network=${account.chain}`, {
+  //       headers: {
+  //         Authorization: `Bearer ${accessToken}`,
+  //         "Content-Type": "application/json",
+  //       },
+  //     })
+  //   ).json();
+  // };
 
   return (
     <Fragment>

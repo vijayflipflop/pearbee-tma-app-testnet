@@ -9,8 +9,10 @@ import Breadcrumb from "components/common/breadcrumb";
 import CategoryQuestionOverviewDetails from "components/category-question-overview";
 import { services } from "core/service";
 import { utils } from "core/helper";
+import { useSelector } from "react-redux";
 
 const CategoryQuestionOverview = () => {
+  const reloadApi = useSelector((state) => state.account?.reloadWallet);
   const { id, questionId } = useParams();
   const [isLoading, setIsLoading] = useState(false);
   const [category, setCategory] = useState([]);
@@ -54,6 +56,12 @@ const CategoryQuestionOverview = () => {
   useEffect(() => {
     setComponentMounted(true);
   }, []);
+
+  useEffect(() => {
+    if (reloadApi) {
+      categoryQuestionDetails();
+    }
+  }, [reloadApi]);
 
   return (
     <div className="page_container">

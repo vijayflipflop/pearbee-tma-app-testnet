@@ -16,7 +16,10 @@ import {
 import vectorBarImg from "assets/images/Vector 2491.png";
 import editicon from "assets/images/pencil_edit.png";
 import bulbIcon from "assets/images/color_bulb.png";
-import { reloadWalletAction } from "core/redux/account/account.action";
+import {
+  reloadApiAfterBetAction,
+  reloadWalletAction,
+} from "core/redux/account/account.action";
 import * as Routeconst from "pages/routes/routes";
 import {
   useTonAddress,
@@ -41,10 +44,12 @@ const QuestionCard = (props) => {
     cardFor = "questionDetail",
     categoryAnsButton,
     reloadWalletAction,
+    reloadApiAfterBetAction,
   } = props;
   // console.log("cardFor::", cardFor);
   // const walletBalance = useSelector((state) => state.account?.wallet);
   const reloadWallet = useSelector((state) => state.account?.reloadWallet);
+  const reloadApi = useSelector((state) => state.account?.reloadWallet);
   const [show, setShow] = useState(false);
   // const rawAddress = useTonAddress(false);
   // console.log("rawAddress::", rawAddress);
@@ -70,6 +75,7 @@ const QuestionCard = (props) => {
   const [editQuantity, setEditQuantity] = useState(false);
   const [balance, setBalance] = useState(0);
   const [mounted, setIsMounted] = useState(false);
+  const [quantityVal, setQuanityVal] = useState("");
 
   useEffect(() => {
     if (eventDetails !== null && qty > 0) {
@@ -128,6 +134,7 @@ const QuestionCard = (props) => {
 
   const handleBetToggleHide = () => {
     setShow(false);
+    setLoading(false);
     setQty(1);
     setSelectedOption("");
   };
@@ -144,6 +151,14 @@ const QuestionCard = (props) => {
 
   const handleSuccessShow = () => setSuccessShow(!successShow);
   const handleErrorToggle = () => setErrorShow(!errorShow);
+
+  // useEffect(() => {
+  //   if (successShow) {
+  //     setTimeout(() => {
+  //       handleSuccessShow(false);
+  //     }, 2000);
+  //   }
+  // }, [successShow]);
 
   const handleConfirmBet = async (txHash_1) => {
     try {
@@ -168,12 +183,16 @@ const QuestionCard = (props) => {
         setRespMessage(resp?.message);
         setLoading(false);
         reloadWalletAction(!reloadWallet);
+        reloadApiAfterBetAction(true);
       } else {
+        // handleBetToggleHide();
+        // handleSuccessShow();
         // handleBetToggleHide();
         // handleErrorToggle();
         // setRespMessage(resp?.message);
         utils.showErrMsg(resp?.message);
         setLoading(false);
+        // reloadApiAfterBetAction(true);
       }
     } catch (err) {
       setLoading(false);
@@ -197,21 +216,11 @@ const QuestionCard = (props) => {
         messages: [
           {
             address: process.env.REACT_APP_TON_WALLET_ADDRESS, // destination address
-            amount: String(convertNanotons), //Toncoin in nanotons
+            amount: String(2000000), //Toncoin in nanotons
           },
         ],
       };
-      // const client = new TonClient({
-      //     endpoint: `${toncenterBaseEndpoint}/api/v2/jsonRPC`,
-      //     apiKey: process.env.REACT_APP_TONCENTER_API_KEY,
-      // });
-
-      // const endpoint = await getHttpEndpoint({
-      //   network: "testnet",
-      // });
-      // console.log("endpoint::", endpoint);
-      // const tonweb = new TonWeb(new TonWeb.HttpProvider(endpoint));
-
+      console.log("toncenterTestpoint::", toncenterTestpoint);
       const tonweb = new TonWeb(
         new TonWeb.HttpProvider(`${toncenterTestpoint}/api/v2/jsonRPC`, {
           apiKey: process.env.REACT_APP_TONCENTER_API_KEY_TEST,
@@ -220,10 +229,6 @@ const QuestionCard = (props) => {
 
       console.log("tonweb::", tonweb);
       const address = wallet.account.address;
-      // let lastTx = (await tonweb.getTransactions(address, 1))[0];
-      // let lastTxHash = lastTx.transaction_id.hash;
-      // console.log(lastTx, "Last Tx");
-      // console.log(lastTxHash, "Last Tx Hash");
       handleProcessTransaction(tonweb, transaction, address);
     } catch (err) {
       console.log("err::", err.message);
@@ -352,8 +357,6 @@ const QuestionCard = (props) => {
     setQuanityVal(1);
   };
 
-  const [quantityVal, setQuanityVal] = useState("");
-
   const handleEditQuantityChange = (eve) => {
     // // console.log("questionDetails::", questionDetails);
     const { value } = eve.target;
@@ -377,29 +380,29 @@ const QuestionCard = (props) => {
     // }
   };
 
-  const loadBalance = async () => {
-    // const endpoint = await getHttpEndpoint({
-    //   network: "testnet",
-    // });
-    // const tonweb = new TonWeb(new TonWeb.HttpProvider(endpoint));
-    const tonweb = new TonWeb(
-      new TonWeb.HttpProvider(`${toncenterTestpoint}/api/v2/jsonRPC`, {
-        apiKey: process.env.REACT_APP_TONCENTER_API_KEY,
-      })
-    );
-    const balance = await tonweb.getBalance(wallet.account.address);
-    // console.log(`Balance: ${TonWeb.utils.fromNano(balance)} TON`);
-    setBalance(TonWeb.utils.fromNano(balance));
-  };
+  // const loadBalance = async () => {
+  //   // const endpoint = await getHttpEndpoint({
+  //   //   network: "testnet",
+  //   // });
+  //   // const tonweb = new TonWeb(new TonWeb.HttpProvider(endpoint));
+  //   const tonweb = new TonWeb(
+  //     new TonWeb.HttpProvider(`${toncenterTestpoint}/api/v2/jsonRPC`, {
+  //       apiKey: process.env.REACT_APP_TONCENTER_API_KEY,
+  //     })
+  //   );
+  //   const balance = await tonweb.getBalance(wallet.account.address);
+  //   // console.log(`Balance: ${TonWeb.utils.fromNano(balance)} TON`);
+  //   setBalance(TonWeb.utils.fromNano(balance));
+  // };
 
-  useEffect(() => {
-    const handleChange = async () => {
-      await loadBalance();
-    };
-    if (mounted) {
-      handleChange();
-    }
-  }, [mounted]);
+  // useEffect(() => {
+  //   const handleChange = async () => {
+  //     await loadBalance();
+  //   };
+  //   if (mounted) {
+  //     handleChange();
+  //   }
+  // }, [mounted]);
 
   useEffect(() => {
     setIsMounted(true);
@@ -620,9 +623,9 @@ const QuestionCard = (props) => {
         {utils.successfullyicon(74, 74)}
         <p>Trade confirmed</p>
 
-        <Button onClick={handleSuccessShow} variant="dark">
+        {/* <Button onClick={handleSuccessShow} variant="dark">
           See trade in Portfolio
-        </Button>
+        </Button> */}
       </OffCanvasCommon>
 
       {/* error */}
@@ -647,6 +650,8 @@ const mapDispatchToProps = (dispatch) => {
   return {
     reloadWalletAction: (reloadWallet) =>
       dispatch(reloadWalletAction(reloadWallet)),
+    reloadApiAfterBetAction: (reloadApi) =>
+      dispatch(reloadApiAfterBetAction(reloadApi)),
   };
 };
 
